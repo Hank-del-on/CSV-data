@@ -2,13 +2,13 @@ ASP.NET Core-prosjekt
 
 dotnet run
 
-@model IEnumerable<CsvReaderApp.Models.Person>
+@model IEnumerable<CsvReaderApp.Models.camera>
 
 @{
-    ViewData["Title"] = "Person Datasett";
+    ViewData["Title"] = "Camera Datasett";
 }
 
-<h1>Person Datasett</h1>
+<h1>camera Datasett</h1>
 
 <form asp-action="Search" method="post">
     <input type="number" name="id" placeholder="Skriv inn ID" required />
@@ -26,12 +26,12 @@ dotnet run
             </tr>
         </thead>
         <tbody>
-            @foreach (var person in Model)
+            @foreach (var camera in Model)
             {
                 <tr>
-                    <td>@person.Id</td>
-                    <td>@person.Navn</td>
-                    <td>@person.Alder</td>
+                    <td>@camera.Id</td>
+                    <td>@camera.Navn</td>
+                    <td>@camera.Alder</td>
                 </tr>
             }
         </tbody>
@@ -39,8 +39,9 @@ dotnet run
 }
 else
 {
-    <p>Ingen person funnet med den IDen.</p>
+    <p>Ingen camera funnet med den IDen.</p>
 }
+--
 
 
 [missing css]
