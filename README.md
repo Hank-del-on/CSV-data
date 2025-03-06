@@ -1,5 +1,7 @@
 ASP.NET Core-prosjekt
 
+ .NET Framework 4.5 but my new library is running .NET Framework 4.5.2
+
 dotnet run
 
 @model IEnumerable<CsvReaderApp.Models.camera>
